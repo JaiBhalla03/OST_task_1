@@ -3,7 +3,7 @@ import coverImage from '../images/hero1.jpg'
 import coverImage1 from '../images/hero2.jpg'
 import Image from 'next/image'
 import {AiOutlineArrowRight, AiOutlinePlus, AiOutlineSwapRight} from "react-icons/ai";
-
+import {motion} from 'framer-motion';
 
 const Hero = () => {
     return (
@@ -11,7 +11,12 @@ const Hero = () => {
             <div className={'w-full flex gap-8'}>
                 <div className={'flex flex-col gap-8 w-[70%]'}>
                     <div className={'flex flex-col gap-4'}>
-                        <div className={'flex gap-4'}>
+                        <motion.div
+                            className={'flex gap-4'}
+                            initial={{x: -1000}}
+                            animate={{x: 0}}
+                            transition={{delay: 1.5}}
+                        >
                             <h1 className={'font-normal text-6xl italic'}>
                                 Best of the week
                             </h1>
@@ -25,9 +30,13 @@ const Hero = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
-                    <div className={'relative'}>
+                    <motion.div className={'relative'}
+                                initial={{ x: -500 ,y: -100 , opacity: 0}}
+                                animate={{ x: 0, y: 0, opacity: 1, transition: {duration: 1}}}
+                                transition={{ type: "spring", stiffness: 100 }}
+                    >
                         <Image src={coverImage} alt={''} className={'w-full rounded-[40px]'}/>
                         <div className={'absolute flex items-center justify-center bottom-6 end-6 bg-white w-10 h-10 rounded-full cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>
                             <AiOutlineArrowRight size={25} className={'font-bold text-gray-800 -rotate-45'}/>
@@ -40,13 +49,27 @@ const Hero = () => {
                                 Job
                             </li>
                         </div>
-                        <div className={'bg-opacity-40 absolute bg-white text-md py-4 px-6 font-semibold top-6 end-6 rounded-[40px] text-4xl'}>
+                        <motion.div
+                            className={'bg-opacity-40 absolute bg-white text-md py-4 px-6 font-semibold top-6 end-6 rounded-[40px] text-4xl'}
+                            initial={{y: 50, opacity: 0}}
+                            animate={{y: 0, opacity: 1}}
+                            transition={{delay: 1.2}}
+                        >
                             Find your dream<br/> job in with <br/>OST placement search.
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
                 <div className={'w-[30%] flex flex-col gap-8'}>
-                    <div className={'relative h-1/2 w-full bg-gray-300 rounded-[40px]'}>
+                    <motion.div
+                        whileHover={{
+                            scale: 1.05,
+                            transition: {duration : 0.3},
+                        }}
+                        initial={{ x: 500 ,y: -100 , opacity: 0}}
+                        animate={{ x: 0, y: 0, opacity: 1, transition: {duration: 1}}}
+                        transition={{ type: "spring", stiffness: 100 }}
+                        className={'relative h-1/2 w-full bg-gray-300 rounded-[40px]'}
+                    >
                         <div className={'absolute flex items-center justify-center top-6 end-6 bg-white w-10 h-10 rounded-full cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>
                             <AiOutlinePlus size={25} className={'font-bold text-gray-800'}/>
                         </div>
@@ -56,8 +79,16 @@ const Hero = () => {
                         <div className={'absolute bottom-6 end-6 underline text-gray-800 flex items-center justify-center font-bold text-sm'}>
                             Learn more
                         </div>
-                    </div>
-                    <div className={'h-1/2 w-full bg-gray-300 rounded-[40px] relative'}>
+                    </motion.div>
+                    <motion.div
+                        whileHover={{
+                            scale: 1.05,
+                            transition: {duration : 0.3},
+                        }}
+                        initial={{ x: 500 ,y: 100 , opacity: 0}}
+                        animate={{ x: 0, y: 0, opacity: 1, transition: {duration: 1}}}
+                        transition={{ type: "spring", stiffness: 100 }}
+                        className={'h-1/2 w-full bg-gray-300 rounded-[40px] relative'}>
                         <Image src={coverImage1} alt={''} className={'w-full rounded-[40px]'}/>
                         <div className={'absolute flex font-bold text-white items-center justify-center top-6 end-6 border border-white w-10 h-10 rounded-full'}>
                             100
@@ -65,7 +96,7 @@ const Hero = () => {
                         <div className={'absolute bottom-6 items-center start-1/2 flex gap-1 -translate-x-1/2 bg-white rounded-full p-4 font-bold cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>
                             Sell all picks <AiOutlineSwapRight/>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </main>

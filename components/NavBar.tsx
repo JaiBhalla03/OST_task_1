@@ -1,9 +1,36 @@
-import React from 'react';
-import {AiOutlineSearch} from "react-icons/ai";
+import React, { useEffect, useState } from 'react';
+import { RiSearchLine } from 'react-icons/ri';
 
 const NavBar = () => {
+    const [hasScrolled, setHasScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+
+            if (scrollTop > 0) {
+                setHasScrolled(true);
+            } else {
+                setHasScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className={'bg-white z-10 px-2 flex justify-between h-16 fixed w-full shadow-xl'}>
+        <nav
+            className={`bg-white z-10 px-2 flex justify-between h-16 fixed w-full ${
+                hasScrolled ? 'shadow-xl' : ''
+            }`}
+            style={{
+                transition: 'box-shadow 0.5s ease-in-out'
+            }}
+        >
             <div className={'flex'}>
                 <div className={'flex items-center text-2xl mx-4 cursor-pointer text-gray-800 font-bold italic'}>
                     OST Blogs.
@@ -34,7 +61,7 @@ const NavBar = () => {
             </div>
             <div className={'flex items-center gap-4'}>
                 <div className={'bg-gray-800 h-10 w-10 p-1 rounded-full flex items-center justify-center cursor-pointer'}>
-                    <AiOutlineSearch size={20} className={'text-white'}/>
+                    <RiSearchLine size={20} className={'text-white rotate-90'} />
                 </div>
                 <div className={'border border-gray-800 rounded-full py-2 px-4 text-sm cursor-pointer'}>
                     Menu
