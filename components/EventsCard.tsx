@@ -2,9 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import {StaticImageData} from "next/image";
 
 interface EventsCardProps {
-    imag: string;
+    imag: StaticImageData;
     eventDate: string;
     eventName: string;
     eventDescription: string;
