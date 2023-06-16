@@ -58,7 +58,7 @@ const Jobs = () => {
                 initial='hidden'
             >
                 <div className={'flex gap-1'}>
-                    <h1 className="tracking-tighter italic text-6xl font-normal">Jobs</h1>
+                    <h1 className="tracking-tighter italic text-6xl font-normal">Job Openings</h1>
                     <div className={'flex flex-col justify-end text-sm font-semibold'}>View More</div>
                 </div>
             </motion.div>

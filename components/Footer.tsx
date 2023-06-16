@@ -38,7 +38,7 @@ const Footer = () => {
         }
     }, [controls, inView])
     return (
-        <footer ref={ref} className={'p-2 flex flex-col items-center gap-8 md:p-10'}>
+        <footer ref={ref} className={'p-2 flex flex-col items-center gap-8 md:p-10 overflow-hidden'}>
             <div className={'flex flex-col gap-8 justify-center items-center'}>
                 <h1 className={'text-6xl italic tracking-tighter text-gray-800'}>Be the part of our broadcast</h1>
                 <div className={'flex gap-8'}>
