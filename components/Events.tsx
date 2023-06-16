@@ -51,7 +51,7 @@ const Events = () => {
     }, []);
 
     return (
-        <div ref={ref} className="h-screen flex flex-col items-center gap-8 mt-16 text-gray-800">
+        <div ref={ref} className="md:h-screen flex flex-col items-center gap-8 mt-16 text-gray-800">
             <motion.div
                 className="flex flex-col items-center justify-center"
                 animate={controls}
