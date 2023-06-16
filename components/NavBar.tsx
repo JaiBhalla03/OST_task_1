@@ -1,5 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import { RiSearchLine } from 'react-icons/ri';
+import Link from "next/link";
 
 const NavBar = () => {
     const [hasScrolled, setHasScrolled] = useState(false);
@@ -43,7 +44,9 @@ const NavBar = () => {
         >
             <div className={'flex'}>
                 <div className={'flex items-center text-2xl mx-4 cursor-pointer text-gray-800 font-bold italic'}>
-                    OST Blogs.
+                    <Link href={'/'}>
+                        OST Blogs.
+                    </Link>
                 </div>
                 <ul className={'flex gap-8 pt-2 font-bold text-gray-800 text-sm'}>
                     <li className={'relative hover:underline duration-75 cursor-pointer transition-all flex items-center'}>

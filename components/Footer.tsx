@@ -97,7 +97,7 @@ const Footer = () => {
                         <input className={'focus:outline-none p-1 bg-white bg-opacity-[15%] text-center border border-white rounded-full text-white placeholder-white h-10 md:h-16 w-56 md:w-72'} placeholder={'Your email'} type={'text'}/>
                         <button className={'hover:-translate-y-1 duration-500 transition-all p-1 h-10 md:h-16 rounded-full bg-black text-white w-28'}>Submit</button>
                     </form>
-                    <div className={'flex justify-between w-full mx-auto w-[80%] border-t border-white pt-4'}>
+                    <div className={'flex justify-between w-full mx-auto w-[90%] border-t border-white pt-4'}>
                         <div className={'font-bold text-gray-800'}>
                             This will be a good experience
                         </div>

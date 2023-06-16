@@ -48,9 +48,24 @@ const Events = () => {
                 initial='hidden'
                 ref={carousel} className={'cursor-grab w-11/12 h-[80%] overflow-hidden'} whileTap={{cursor: "grabbing"}}>
                 <motion.div drag={'x'} dragConstraints={{right: 0, left: -width}} className={'flex gap-8 h-full'}>
-                    <EventsCard imag={image1}/>
-                    <EventsCard imag={image2}/>
-                    <EventsCard imag={image3}/>
+                    <EventsCard
+                        imag={image1}
+                        eventDate={'June 20, 2023'}
+                        eventName={'Tech Career Fair'}
+                        eventDescription={'Join us for an exciting opportunity to explore the latest tech trends.'}
+                    />
+                    <EventsCard
+                        imag={image2}
+                        eventDate={'July 2, 2023'}
+                        eventName={'Marketing Workshop'}
+                        eventDescription={'Learn effective marketing strategies from industry experts in this interactive workshop.'}
+                    />
+                    <EventsCard
+                        imag={image3}
+                        eventDate={'August 8, 2023'}
+                        eventName={'Finance Symposium'}
+                        eventDescription={'Dive into the world of finance and gain insights from top professionals.'}
+                    />
                 </motion.div>
             </motion.div>
         </div>
