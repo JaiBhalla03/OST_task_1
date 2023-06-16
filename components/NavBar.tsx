@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { RiSearchLine } from 'react-icons/ri';
 
 const NavBar = () => {
     const [hasScrolled, setHasScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const prevScrollY = useRef(0);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,15 +23,23 @@ const NavBar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > prevScrollY.current) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+            prevScrollY.current = currentScrollY;
+        };
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     return (
         <nav
-            className={`bg-white z-10 px-2 flex justify-between h-16 fixed w-full ${
-                hasScrolled ? 'shadow-xl' : ''
-            }`}
-            style={{
-                transition: 'box-shadow 0.5s ease-in-out'
-            }}
+            className={`bg-white z-10 px-2 flex justify-between h-16 duration-700 transition-all w-full ${hasScrolled ? 'shadow-xl' : ''} 
+            ${isScrolled ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100 sticky top-0'}`}
         >
             <div className={'flex'}>
                 <div className={'flex items-center text-2xl mx-4 cursor-pointer text-gray-800 font-bold italic'}>

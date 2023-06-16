@@ -7,7 +7,7 @@ import {motion} from 'framer-motion';
 
 const Hero = () => {
     return (
-        <main className={'pt-20 px-10 text-gray-800'}>
+        <main className={'pt-5 px-10 text-gray-800'}>
             <div className={'w-full flex gap-8'}>
                 <div className={'flex flex-col gap-8 w-[70%]'}>
                     <div className={'flex flex-col gap-4'}>
@@ -17,7 +17,7 @@ const Hero = () => {
                             animate={{x: 0}}
                             transition={{delay: 1.5}}
                         >
-                            <h1 className={'font-normal text-6xl italic'}>
+                            <h1 className={'tracking-tighter font-normal text-6xl italic'}>
                                 Best of the week
                             </h1>
                             <div className={'flex flex-col justify-end'}>
