@@ -19,3 +19,7 @@
     background: rgb(120, 120, 124); /* Set the color of the scrollbar thumb */
     border-radius: 5px; /* Set the border radius of the thumb */
 }
+
+*{
+    -webkit-tap-highlight-color: transparent;
+}
