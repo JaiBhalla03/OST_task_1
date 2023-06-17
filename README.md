@@ -1,38 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This the frontend for the landing page for the blogging website 
+### A task given by the OST placement search private limited
 
-## Getting Started
+#### Technologies used are the Next.js tailwind css
+Also libraries like framer-motion, react-intersection-observer and react-icons 
 
-First, run the development server:
+## Desktop view screenshot
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/89b7db0d-34a7-4a47-8807-32a6dcdf7ef1)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/0c90ae66-1c48-45a9-bdcb-4e13746a8e06)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/259bc825-a736-4048-8ec8-dce45d09c152)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/61a81022-c22e-4d57-aec3-8c1531897d8e)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/a70dc31f-a405-4008-850a-50d787fc2ea0)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Mobile view screenshot 
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/1e52110a-6b99-4937-bb74-297cb0dc86e1)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/15dac552-8509-4563-a4dd-b92e9e6199ec)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/b0b2f079-d3be-45ef-aa5e-d2a3c4f29b58)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/fd182bb9-c6d0-4d33-86fa-2f96c8a0ac17)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/8db29381-9156-4a1b-bb00-122fcb34f353)
+![image](https://github.com/JaiBhalla03/OST_task_1/assets/101990594/4c141c87-9ebc-407c-bb5d-fd4e2d8f3083)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### The entire website is responsive 
