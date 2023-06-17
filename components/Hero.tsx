@@ -50,7 +50,7 @@ const Hero = () => {
                             </li>
                         </div>
                         <motion.div
-                            className={'bg-opacity-40 absolute bg-white text-md md:text-3xl lg:text-4xl py-2 px-2 md:py-2 lg:py-4 md:px-4 lg:px-6 font-semibold md:bottom-4 md:start-4 lg:bottom-6 lg:start-6 rounded-[20px] md:rounded-[40px]'}
+                            className={'bg-opacity-40 absolute bg-white text-md md:text-3xl lg:text-4xl py-2 px-2 md:py-2 lg:py-4 md:px-4 lg:px-6 font-semibold bottom-4 start-4 md:bottom-4 md:start-4 lg:bottom-6 lg:start-6 rounded-[20px] md:rounded-[40px]'}
                             initial={{y: 50, opacity: 0}}
                             animate={{y: 0, opacity: 1}}
                             transition={{delay: 1.2}}
@@ -72,6 +72,10 @@ const Hero = () => {
                     >
                         <div className={'absolute flex items-center justify-center top-6 end-6 bg-white w-10 h-10 rounded-full cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>
                             <AiOutlinePlus size={25} className={'font-bold text-gray-800'}/>
+                        </div>
+                        <div className={'absolute bottom-6 start-6'}>
+                            <p className={'w-2/3 text-xl font-thin'}>Join our blogs</p>
+                            <p className={'w-2/3 text-2xl font-bold italic'}>Real talk is the corporate world.</p>
                         </div>
                         <li className={'flex items-center justify-center absolute bg-opacity-30 decoration-1 top-6 start-6 text-black border border-black rounded-full w-16 text-sm'}>
                             ADS

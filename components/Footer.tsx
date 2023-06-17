@@ -88,6 +88,9 @@ const Footer = () => {
                 initial='hidden'
             >
                 <Image src={footerImage} alt={''} className={'w-full h-96 md:h-full object-cover rounded-[20px] md:rounded-[40px]'}/>
+                <div className={'absolute top-0 h-full w-full bg-black rounded-[20px] md:rounded-[40px] opacity-[40%]'}>
+
+                </div>
                 <div className={'flex flex-col items-center justify-around absolute top-0 rounded-[40px] backdrop-blur-sm w-full h-full'}>
                     <div className={'text-3xl md:text-4xl md:text-5xl font-normal text-white'}>
                         JOIN NOW
@@ -97,7 +100,7 @@ const Footer = () => {
                         <input className={'focus:outline-none p-1 bg-white bg-opacity-[15%] text-center border border-white rounded-full text-white placeholder-white h-10 md:h-16 w-56 md:w-72'} placeholder={'Your email'} type={'text'}/>
                         <button className={'hover:-translate-y-1 duration-500 transition-all p-1 h-10 md:h-16 rounded-full bg-black text-white w-28'}>Submit</button>
                     </form>
-                    <div className={'flex flex-col md:flex-row gap-4 justify-between w-full mx-auto w-[90%] border-t border-white pt-4'}>
+                    <div className={'flex flex-col md:flex-row gap-4 justify-between w-full mx-auto w-11/12 border-t border-white pt-4'}>
                         <div className={'font-bold text-gray-800'}>
                             This will be a good experience
                         </div>
