@@ -71,7 +71,7 @@ const Events = () => {
                 className="cursor-grab w-full md:w-11/12 h-full md:h-[80%] overflow-hidden"
                 whileTap={{ cursor: 'grabbing' }}
             >
-                <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex gap-2 md:gap-8 h-full">
+                <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex gap-4 md:gap-8 h-full">
                     <EventsCard
                         imag={image1}
                         eventDate="June 20, 2023"

@@ -23,7 +23,7 @@ const EventsCard: React.FC<EventsCardProps> = ({ imag, eventDate, eventName, eve
                 <div className={'bg-white p-1 rounded-full text-center w-full'}>{eventDate}</div>
                 <div className={'bg-black bg-opacity-40 font-extralight border p-1 rounded-full text-center border-white text-white w-full'}>{eventName}</div>
             </div>
-            <motion.div className={'bg-opacity-40 absolute bg-white text-md md:text-md py-4 px-6 font-semibold top-0 start-0 md:top-6 md:start-6 rounded-[20px] md:rounded-[40px] text-4xl w-full md:w-1/2'} initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.2 }}>
+            <motion.div className={'bg-opacity-40 absolute bg-white text-md md:text-2xl lg:text-4xl py-4 px-6 font-semibold top-0 start-0 md:top-6 md:start-6 rounded-[20px] md:rounded-[40px] w-full md:w-1/2'} initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 1.2 }}>
                 {eventDescription}
             </motion.div>
         </motion.div>

@@ -87,7 +87,7 @@ const Footer = () => {
                 variants={footerVariant}
                 initial='hidden'
             >
-                <Image src={footerImage} alt={''} className={'w-full h-96 md:h-full object-cover rounded-[40px]'}/>
+                <Image src={footerImage} alt={''} className={'w-full h-96 md:h-full object-cover rounded-[20px] md:rounded-[40px]'}/>
                 <div className={'flex flex-col items-center justify-around absolute top-0 rounded-[40px] backdrop-blur-sm w-full h-full'}>
                     <div className={'text-3xl md:text-4xl md:text-5xl font-normal text-white'}>
                         JOIN NOW

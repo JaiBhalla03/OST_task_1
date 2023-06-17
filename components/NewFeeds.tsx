@@ -66,7 +66,7 @@ const NewFeeds = () => {
     ];
 
     return (
-        <div className={'mt-16 px-2 md:px-10 text-gray-800'} ref={ref}>
+        <div className={'mt-10 md:mt-16 px-2 md:px-10 text-gray-800'} ref={ref}>
             <motion.div
                 className="flex flex-col justify-center"
                 animate={controls}
@@ -89,14 +89,14 @@ const NewFeeds = () => {
                 {blogPreviews.map((blog, index) => (
                     <motion.div
                         key={index}
-                        className="bg-gray-200 rounded-[40px] relative"
+                        className="bg-gray-200 rounded-[20px] md:rounded-[40px] relative"
                         initial="hidden"
                         animate={controls}
                         whileHover={{scale: 1.05, transition: {duration: 0.5}}}
                         variants={blog.variants}
                     >
-                        <Image src={blog.image} alt="Blog Preview" className="w-full h-full object-cover rounded-[40px] mb-4" />
-                        <div className={'bg-opacity-50 absolute bg-white py-4 px-6 font-semibold top-6 start-6 rounded-[40px] hidden md:block text-2xl w-1/2'}>
+                        <Image src={blog.image} alt="Blog Preview" className="w-full h-full object-cover rounded-[20px] md:rounded-[40px] mb-4" />
+                        <div className={'bg-opacity-50 absolute bg-white py-4 px-6 font-semibold top-6 start-6 rounded-[40px] hidden lg:block text-2xl w-1/2'}>
                             {blog.description}
                         </div>
                         <div className={'absolute flex items-center justify-center top-6 end-6 bg-white w-10 h-10 rounded-full cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>

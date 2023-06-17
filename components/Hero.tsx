@@ -50,7 +50,7 @@ const Hero = () => {
                             </li>
                         </div>
                         <motion.div
-                            className={'bg-opacity-40 absolute bg-white text-md md:text-4xl py-2 px-2 md:py-4 md:px-6 font-semibold bottom-6 start-6 rounded-[20px] md:rounded-[40px]'}
+                            className={'bg-opacity-40 absolute bg-white text-md md:text-3xl lg:text-4xl py-2 px-2 md:py-2 lg:py-4 md:px-4 lg:px-6 font-semibold md:bottom-4 md:start-4 lg:bottom-6 lg:start-6 rounded-[20px] md:rounded-[40px]'}
                             initial={{y: 50, opacity: 0}}
                             animate={{y: 0, opacity: 1}}
                             transition={{delay: 1.2}}
@@ -68,7 +68,7 @@ const Hero = () => {
                         initial={{ x: 500 ,y: -100 , opacity: 0}}
                         animate={{ x: 0, y: 0, opacity: 1, transition: {duration: 1}}}
                         transition={{ type: "spring", stiffness: 100 }}
-                        className={'relative h-48 md:h-1/2 w-full bg-gray-300 rounded-[40px]'}
+                        className={'relative h-48 md:h-1/2 w-full bg-gray-300 rounded-[20px] md:rounded-[40px]'}
                     >
                         <div className={'absolute flex items-center justify-center top-6 end-6 bg-white w-10 h-10 rounded-full cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>
                             <AiOutlinePlus size={25} className={'font-bold text-gray-800'}/>

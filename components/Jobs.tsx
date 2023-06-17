@@ -69,7 +69,7 @@ const Jobs = () => {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
                 {jobList.map((job, index) => (
-                    <div key={index} className="bg-white p-6 rounded-[40px] shadow-md">
+                    <div key={index} className="bg-white p-6 rounded-[20px] md:rounded-[40px] shadow-md">
                         <h3 className="text-xl font-bold">{job.title}</h3>
                         <p className="text-gray-600">{job.location}</p>
                         <p className="mt-4">{job.description}</p>
