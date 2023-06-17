@@ -51,7 +51,7 @@ const Events = () => {
     }, []);
 
     return (
-        <div ref={ref} className="md:h-screen flex flex-col items-center gap-8 mt-16 text-gray-800">
+        <div ref={ref} className="px-2 md:px-0 h-screen flex flex-col items-center gap-4 md:gap-8 mt-10 md:mt-16 text-gray-800">
             <motion.div
                 className="flex flex-col items-center justify-center"
                 animate={controls}
@@ -59,7 +59,7 @@ const Events = () => {
                 initial="hidden"
             >
                 <div className="flex gap-1">
-                    <h1 className="tracking-tighter italic text-6xl font-normal">Events Calendar</h1>
+                    <h1 className="tracking-tighter italic text-4xl md:text-6xl font-normal">Events Calendar</h1>
                     <div className="flex flex-col justify-end text-sm font-semibold">Category</div>
                 </div>
             </motion.div>
@@ -68,10 +68,10 @@ const Events = () => {
                 variants={eventVariants}
                 initial="hidden"
                 ref={carousel}
-                className="cursor-grab w-11/12 h-[80%] overflow-hidden"
+                className="cursor-grab w-full md:w-11/12 h-full md:h-[80%] overflow-hidden"
                 whileTap={{ cursor: 'grabbing' }}
             >
-                <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex gap-8 h-full">
+                <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex gap-2 md:gap-8 h-full">
                     <EventsCard
                         imag={image1}
                         eventDate="June 20, 2023"

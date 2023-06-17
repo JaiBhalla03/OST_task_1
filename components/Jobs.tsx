@@ -50,7 +50,7 @@ const Jobs = () => {
     ];
 
     return (
-        <div ref={ref} className="my-10 px-10 text-gray-800 flex flex-col gap-8 items-center">
+        <div ref={ref} className="my-10 px-2 md:px-10 text-gray-800 flex flex-col gap-4 md:gap-8 items-center">
             <motion.div
                 className="flex flex-col items-center justify-center"
                 animate={controls}
@@ -58,7 +58,7 @@ const Jobs = () => {
                 initial='hidden'
             >
                 <div className={'flex gap-1'}>
-                    <h1 className="tracking-tighter italic text-6xl font-normal">Job Openings</h1>
+                    <h1 className="tracking-tighter italic text-4xl md:text-6xl font-normal">Job Openings</h1>
                     <div className={'flex flex-col justify-end text-sm font-semibold'}>View More</div>
                 </div>
             </motion.div>

@@ -21,8 +21,8 @@ const Hero = () => {
                                 Best of the week
                             </h1>
                             <div className={'flex flex-col justify-end'}>
-                                <div className={'flex gap-1 group hover:gap-2 duration-500 transition-all cursor-pointer'}>
-                                    <div className={'pt-4 text-sm md:text-md italic group-hover:tracking-[1px] duration-500 transition-all'}>
+                                <div className={'flex gap-1 group md:hover:gap-2 duration-500 transition-all cursor-pointer'}>
+                                    <div className={'pt-4 text-sm md:text-md italic md:group-hover:tracking-[1px] duration-500 transition-all'}>
                                         See all posts
                                     </div>
                                     <div className={'flex items-center mt-3 pt-1'}>
@@ -50,7 +50,7 @@ const Hero = () => {
                             </li>
                         </div>
                         <motion.div
-                            className={'bg-opacity-40 absolute bg-white text-md md:text-4xl py-2 px-2 md:py-4 md:px-6 font-semibold bottom-6 start-6 md:top-6 md:end-6 rounded-[20px] md:rounded-[40px]'}
+                            className={'bg-opacity-40 absolute bg-white text-md md:text-4xl py-2 px-2 md:py-4 md:px-6 font-semibold bottom-6 start-6 rounded-[20px] md:rounded-[40px]'}
                             initial={{y: 50, opacity: 0}}
                             animate={{y: 0, opacity: 1}}
                             transition={{delay: 1.2}}
@@ -88,12 +88,12 @@ const Hero = () => {
                         initial={{ x: 500 ,y: 100 , opacity: 0}}
                         animate={{ x: 0, y: 0, opacity: 1, transition: {duration: 1}}}
                         transition={{ type: "spring", stiffness: 100 }}
-                        className={'h-56 md:h-1/2 w-full bg-gray-300 rounded-[40px] relative'}>
-                        <Image src={coverImage1} alt={''} className={'w-full h-full rounded-[40px]'}/>
+                        className={'h-56 md:h-1/2 w-full bg-gray-300 rounded-[20px] md:rounded-[40px] relative'}>
+                        <Image src={coverImage1} alt={''} className={'w-full h-full object-cover rounded-[20px] md:rounded-[40px]'}/>
                         <div className={'absolute flex font-bold text-white items-center justify-center top-6 end-6 border border-white w-10 h-10 rounded-full'}>
                             100
                         </div>
-                        <div className={'absolute bottom-6 items-center start-1/2 flex gap-1 -translate-x-1/2 bg-white rounded-full p-4 font-bold cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>
+                        <div className={'absolute bottom-6 items-center start-1/2 flex gap-1 -translate-x-1/2 bg-white rounded-full p-2 md:p-4 font-bold cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>
                             Sell all picks <AiOutlineSwapRight/>
                         </div>
                     </motion.div>
